@@ -1,0 +1,175 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    height: 100vh;
+    width: 100%;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .heading p {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.header .Total-expense p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+
+}
+
+.header .Balence p {
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+}
+
+.main label {
+    display: block;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main input {
+    width: 80%;
+    margin-left: 15px;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    color: white;
+}
+
+.main .btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main .btn button {
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(255, 208, 0, 0);
+    border: none;
+    width: 200px;
+    height: 60px;
+    box-shadow: 0px 0px 5px black;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease;
+    font-size: larger;
+}
+.main .btn button:hover{
+    transform: translateY(-5px);
+}
+.main .btn button:active{
+    transform: translateY(0px);
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+    align-items: center;
+}
+.history .card{
+    width: auto;
+    display: flex;
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+    flex-direction: row;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    animation: card-animation 0.8s ease-in forwards;
+}
+@keyframes card-animation {
+    from{
+        opacity: 0;
+        transform: translateX(400px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.history .card-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 2;
+}
+.history .card-title{
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.history .card-title p{
+    margin-bottom: px;
+    margin-top: 10px;
+}
+.history .card-button button{
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+}
+.history .card-title .c-title{
+    font-size: 20px;
+    margin-top: 0px;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    display: inline;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

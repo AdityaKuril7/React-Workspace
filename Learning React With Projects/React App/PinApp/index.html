@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container{
+        background-color: wheat;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        border-radius: 20px;
+        animation: example 5s ease alternate;
+        transition: all 0.5s ease;
+        border: none;
+    }
+    .heading{
+        font-size: 30px;
+        margin-bottom: 0px;
+        
+    }
+    label{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 20px;
+        font-weight:bold;
+        /* margin-left: 5px; */
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin-top: 20px;
+        
+        
+    }
+    input::placeholder{
+        text-align: left;
+        display: block;
+        text-align: center;
+
+    }
+    button{
+        margin-top: 30px;
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 20px;
+        color:black;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+    button:hover{
+        background-color: red;
+        color: white;
+    }
+    .container:hover{
+        box-shadow: 0px 0px 30px cyan;
+        
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Login Page</h1>
+        </div>
+        <div class="content">
+            <form action="#">
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter Your Username" required><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter Your Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

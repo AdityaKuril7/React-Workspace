@@ -1,0 +1,115 @@
+body{
+    background-color: #063970;
+}
+.container{
+    width: 90%;          /* take 90% of screen */
+    max-width: 1200px;   /* but don’t go wider than 1200px */
+    margin: 0 auto;      /* center it */
+    padding: 16px;       /* some spacing */
+    background: #f9f9f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #063970;
+}
+.heading{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    display: inline;
+    margin-right: 60px;
+    font-family: "Arial Black";
+    color: white;
+    font-size: 30px;
+}
+.heading #clear-all{
+    width: auto;
+    padding: 7px;
+    border-radius: 15px;
+    background-color: rgba(132, 58, 58, 0);
+    color: white;
+    border: 1px solid white;
+}
+.container-card{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 10%;
+    font-family: "Arial";
+
+}
+.card {
+    width: 500px;
+    height: 50px;
+    background: rgb(236, 236, 236);
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 5px 5px black;
+    color: white;
+}
+.container-card .card span{
+    font-size: 20px;
+}
+.container-card .card p{
+    font-size: 15px;
+}
+
+.Transaction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: #0f1c2f;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px; /* wider form */
+    margin: 30px auto;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+.Transaction label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #d1d5db;
+}
+
+.Transaction input,
+.Transaction select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #1a2a44;
+    color: white;
+    width: 100%;             /* ✅ force full width */
+    box-sizing: border-box;  /* ✅ fix uneven widths */
+}
+
+.Transaction button {
+    width: 100%;
+    padding: 12px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.Transaction button:hover {
+    background: #4f46e5;
+}

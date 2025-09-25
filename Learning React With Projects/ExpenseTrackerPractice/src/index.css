@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.card {
+    border: 2px solid black;
+    width: 340px;
+    height: auto;
+    text-align: left;
+    border-radius: 30px;
+    padding: 10px;
+    overflow: scroll;
+    background: #0f2231; 
+    transition: all 2s ease;
+}
+.card h1 {
+    font-size: 35px;
+    display: block;
+    text-align: center;
+}
+
+.card p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.card label {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card input {
+    display: inline;
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: larger;
+}
+.forbutton{
+    text-align: center;
+}
+
+.card button {
+    margin: 30px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid;
+    font-size: 20px;
+    background-color: #0f2231;
+    color: white;
+}
+
+.lists {
+    font-size: 20px;
+}
+
+.smallCards {
+    background: #0F2027;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+    border: 2px solid;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    animation: coming 2s ease forwards;
+}
+
+.smallCards .title {
+    
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+    
+}
+@keyframes coming {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    
+}
+.amount{
+    color: lightgreen;
+    text-align: left;
+}

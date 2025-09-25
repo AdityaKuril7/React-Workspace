@@ -1,0 +1,112 @@
+[
+    {
+        "title": "Baahubali: The Beginning",
+        "imglink": "./src/assets/Bahubali.jpg",
+        "releaseDate": "10 July 2015"
+    },
+    {
+        "title": "Dangal",
+        "imglink": "https://example.com/dangal.jpg",
+        "releaseDate": "23 December 2016"
+    },
+    {
+        "title": "PK",
+        "imglink": "https://example.com/pk.jpg",
+        "releaseDate": "19 December 2014"
+    },
+    {
+        "title": "3 Idiots",
+        "imglink": "https://example.com/3idiots.jpg",
+        "releaseDate": "25 December 2009"
+    },
+    {
+        "title": "Bajrangi Bhaijaan",
+        "imglink": "https://example.com/bajrangi.jpg",
+        "releaseDate": "17 July 2015"
+    },
+    {
+        "title": "Secret Superstar",
+        "imglink": "https://example.com/secretsuperstar.jpg",
+        "releaseDate": "19 October 2017"
+    },
+    {
+        "title": "Sultan",
+        "imglink": "https://example.com/sultan.jpg",
+        "releaseDate": "6 July 2016"
+    },
+    {
+        "title": "Tiger Zinda Hai",
+        "imglink": "https://example.com/tigerzindahai.jpg",
+        "releaseDate": "22 December 2017"
+    },
+    {
+        "title": "Sanju",
+        "imglink": "https://example.com/sanju.jpg",
+        "releaseDate": "29 June 2018"
+    },
+    {
+        "title": "Padmaavat",
+        "imglink": "https://example.com/padmaavat.jpg",
+        "releaseDate": "25 January 2018"
+    },
+    {
+        "title": "Dhoom 3",
+        "imglink": "https://example.com/dhoom3.jpg",
+        "releaseDate": "20 December 2013"
+    },
+    {
+        "title": "War",
+        "imglink": "https://example.com/war.jpg",
+        "releaseDate": "2 October 2019"
+    },
+    {
+        "title": "Kabir Singh",
+        "imglink": "https://example.com/kabirsingh.jpg",
+        "releaseDate": "21 June 2019"
+    },
+    {
+        "title": "Gully Boy",
+        "imglink": "https://example.com/gullyboy.jpg",
+        "releaseDate": "14 February 2019"
+    },
+    {
+        "title": "Uri: The Surgical Strike",
+        "imglink": "https://example.com/uri.jpg",
+        "releaseDate": "11 January 2019"
+    },
+    {
+        "title": "Andhadhun",
+        "imglink": "https://example.com/andhadhun.jpg",
+        "releaseDate": "5 October 2018"
+    },
+    {
+        "title": "Badhaai Ho",
+        "imglink": "https://example.com/badhaaiho.jpg",
+        "releaseDate": "18 October 2018"
+    },
+    {
+        "title": "Stree",
+        "imglink": "https://example.com/stree.jpg",
+        "releaseDate": "31 August 2018"
+    },
+    {
+        "title": "Raazi",
+        "imglink": "https://example.com/raazi.jpg",
+        "releaseDate": "11 May 2018"
+    },
+    {
+        "title": "Newton",
+        "imglink": "https://example.com/newton.jpg",
+        "releaseDate": "22 September 2017"
+    },
+    {
+        "title": "Dangal 2",
+        "imglink": "https://example.com/dangal2.jpg",
+        "releaseDate": "20 December 2025"
+    },
+    {
+        "title": "Jolly LLB 3",
+        "imglink": "https://example.com/jollyllb3.jpg",
+        "releaseDate": "19 September 2025"
+    }
+]

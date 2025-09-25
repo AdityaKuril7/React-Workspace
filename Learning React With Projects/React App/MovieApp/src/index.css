@@ -1,0 +1,51 @@
+.card img{
+    background-color: black;
+    border-radius: 20px;
+    width: 250px;
+    margin-top: 0%;
+}
+.card{
+    background-color: wheat;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 30px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: px;
+    transition: all 1s ease;
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry;
+    overflow: hidden;
+}
+.card .title p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+.card:hover{
+    
+    transform:skew(10deg,10deg)
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@keyframes scrolling {
+    from{
+        opacity: -10;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}

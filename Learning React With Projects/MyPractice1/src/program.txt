@@ -1,0 +1,40 @@
+import { useState,useEffect } from "react"
+function App() {
+  const [food, setFood] = useState(()=>{
+    const savedFood = localStorage.getItem("foodlist")
+    return savedFood ? JSON.parse(savedFood) :[]
+  })
+  useEffect(()=>{
+    localStorage.setItem("foodlist",JSON.stringify(food))
+  },[food])
+  useEffect(()=>{
+    const savedFood = localStorage.getItem("foodlist")
+    if(savedFood){
+      setFood(JSON.parse(savedFood))
+    }
+  },[])
+  const handleClick = () => {
+    const getFood = document.getElementById("getFood").value;
+    setFood([...food, getFood])
+    document.getElementById("getFood").value = ""
+  }
+  const handleRemove = (index) => {
+    const updateFood = food.filter((_, i) => i !== index)
+    setFood(updateFood)
+    localStorage.setItem("foodlist",JSON.parse(updateFood))
+
+  }
+  return (
+    <div>
+      <h1>List of Foods</h1>
+      <input type="text" id="getFood" />
+      <button onClick={handleClick}>Add Food</button>
+      <div className="display">
+        <ul>
+          {food.map((value, index) => <li onClick={()=>handleRemove(index)} key={index}>{value}</li>)}
+        </ul>
+      </div>
+    </div>
+  )
+}
+export default App
