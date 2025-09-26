@@ -1,0 +1,1 @@
+npm create vite@latest mp1 & cd mp1 & npm install & npm i tailwindcss @tailwindcss/vite
