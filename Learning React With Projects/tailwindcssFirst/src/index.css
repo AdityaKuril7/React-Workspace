@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.container{
+    animation: rolla 0.5s ease-in forwards;
+    transition: all 0.5s ease;
+    background-color: black;
+}
+
+.changecolortoblack{
+    background-color: black;
+    color: white;
+}
+.changecolortowheat{
+    background-color: wheat;
+    color: black;
+}
+@keyframes rolla {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
