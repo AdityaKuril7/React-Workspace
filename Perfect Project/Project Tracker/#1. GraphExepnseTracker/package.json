@@ -1,5 +1,5 @@
 {
-  "name": "myapp1",
+  "name": "graphexepnsetracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +11,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
-    "chart.js": "^2.9.4",
+    "chartjs": "^0.3.24",
     "react": "^19.1.1",
-    "react-chartjs": "^1.2.0",
-    "react-chartjs-2": "^2.11.1",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
   },
