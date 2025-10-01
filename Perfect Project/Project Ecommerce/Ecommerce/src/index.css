@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.icons{
+  @apply text-3xl transition-all duration-200 hover:scale-105
+}
