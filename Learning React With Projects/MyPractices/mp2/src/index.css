@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.795);
+}
+.icons-buttons{
+    @apply border border-green-500 rounded-[50%] p-3 text-green-500
+}
