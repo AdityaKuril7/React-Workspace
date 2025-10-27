@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.btn{
+  @apply bg-blue-400 w-20 h-10 rounded-4xl
+}
