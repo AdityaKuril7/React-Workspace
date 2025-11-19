@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
-import { BsTrash } from "react-icons/bs";
+import { BsShare, BsTrash } from "react-icons/bs";
 
 export default function DisplayCard({ post, index }) {
   return (
@@ -29,8 +29,11 @@ export default function DisplayCard({ post, index }) {
         </div>
 
         <div>
-        <button className="mt-auto inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-red-700 focus:ring-2 focus:ring-blue-300">
-          <BsTrash />
+        <button className="mt-auto w-40 text-center font-mono text-[17px] items-center px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
+          Share
+        </button>
+        <button className="mt-auto w-40 text-center ml-5  font-mono text-[17px] items-center px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
+          Comment
         </button>
         </div>
       </div>

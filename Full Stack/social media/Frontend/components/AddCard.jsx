@@ -33,10 +33,10 @@ function AddCard() {
   };
 
   return (
-    <div className="w-[calc(100vw-64px)] h-[calc(100vh-64px)] flex justify-center items-center ml-16 pl-2 mt-18">
-      <div className="h-120 w-120 rounded-2xl shadow-md shadow-black/70 p-5 bg-black/20">
+    <div className="w-[calc(100vw-64px)] h-[calc(100vh-64px)] flex justify-center bg-gray-900 items-center ml-16 pl-2 mt-18">
+      <div className={`${image ? "h-155":"h-120"} w-130 rounded-2xl shadow-[0px_0px_10px_rgba(255,210,255,0.3)] p-8 bg-gray-900 `}>
         <div>
-          <label className="block mt-3 mb-1" htmlFor="">
+          <label className="block mt-5 font-mono font-bold text-white mb-2 text-[20px]" htmlFor="">
             User Name
           </label>
           <input
@@ -44,10 +44,11 @@ function AddCard() {
             onChange={(e) => setUsername(e.target.value)}
             className="input-sections"
             type="text"
+            placeholder="Enter Username"
           />
         </div>
         <div>
-          <label className="block mt-3 mb-1" htmlFor="">
+          <label className="block mt-5 font-mono font-bold text-white mb-2 text-[20px]" htmlFor="">
             Image
           </label>
 
@@ -58,7 +59,7 @@ function AddCard() {
           />
         </div>
         <div>
-          <label className="block mt-3 mb-1" htmlFor="">
+          <label className="block mt-5 font-mono font-bold text-white mb-2 text-[20px]" htmlFor="">
             Caption
           </label>
           <input
@@ -66,6 +67,7 @@ function AddCard() {
             onChange={(e) => setCaption(e.target.value)}
             className="input-sections"
             type="text"
+            placeholder="Enter Caption"
           />
         </div>
         <div className="flex justify-center items-center mt-5">
@@ -76,13 +78,13 @@ function AddCard() {
         <div className="flex justify-center items-center mt-5">
           <button
             onClick={handleAddClick}
-            className="btns hover:bg-green-600 hover:border-none hover:translate-y-[-5px] hover:text-white"
+            className="btns bg-gray-950 hover:bg-green-500"
           >
             Post
           </button>
           <button
             onClick={() => setAddCard(!addCard)}
-            className="btns hover:bg-red-600 hover:border-none hover:translate-y-[-5px] hover:text-white"
+            className="btns bg-gray-950 hover:bg-red-500"
           >
             Cancle
           </button>
